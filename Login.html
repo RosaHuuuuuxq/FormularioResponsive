@@ -7,6 +7,40 @@
     <title>Login</title>
 </head>
 <body>
+    <script>
+        alert("Bienvenido");
+        var nombre = prompt("Como te llamas")
+        var apellido = prompt("Cual es tu apellido");
+        var edad = prompt("Cuantos años tienes");
+
+        if (edad <=18){
+            mensaje = "menor de edad";
+            window.location.href ="https://google.com";
+        }
+        else {
+            mensaje = "mayor de edad";
+        }
+
+        var cresp = confirm("Muchas gracias por la información , desea continuar y mostrar su información");
+       
+        if (cresp == true){
+            alert("Ahora mostraremos tus datos por pantalla");
+        }
+        else{
+            alert("Se acabó");
+            window.location.href = "https://www.google.com";
+        }
+
+        //alert("Hola Mr " + nombre);
+        //alert("Tu edad es " + edad);
+        //alert("Por edad eres "+ mensaje)
+
+        document.write("<h2>" + "Bienvenidos " + nombre +"</h2>");
+
+
+
+    </script>
+
     <form class="formulario">
         <h1>Login de Usuario</h1>
         <div class="contenedor">  
